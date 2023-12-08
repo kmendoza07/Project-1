@@ -120,7 +120,10 @@ class Ui_MainWindow(object):
         self.message_label.setObjectName("message_label")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 480, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 480, 23))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.menubar.setFont(font)
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -132,7 +135,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Online Banking"))
         self.accountBalance_Label.setText(_translate("MainWindow", "ACCOUNT BALANCE"))
         self.deposit_Button.setText(_translate("MainWindow", "Deposit"))
         self.withdraw_Button.setText(_translate("MainWindow", "Withdraw"))

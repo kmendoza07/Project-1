@@ -56,7 +56,7 @@ class Ui_TransactionWindow(object):
 
     def retranslateUi(self, TransactionWindow):
         _translate = QtCore.QCoreApplication.translate
-        TransactionWindow.setWindowTitle(_translate("TransactionWindow", "MainWindow"))
+        TransactionWindow.setWindowTitle(_translate("TransactionWindow", "Online Banking"))
         self.label.setText(_translate("TransactionWindow", "TRANSACTION HISTORY"))
 
 
